@@ -1,0 +1,13 @@
+version: '3'
+services:
+  streamlit:
+    build: .
+    volumes:
+      - .:/app
+      - venv:/app/.venv
+    ports:
+      - 8501:8501
+    tty: true
+    command: poetry run streamlit run /app/src/main.py
+volumes:
+  venv:
