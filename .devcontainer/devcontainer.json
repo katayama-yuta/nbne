@@ -27,11 +27,15 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				"editor.defaultFormatter": "ms-python.black-formatter",
+				"editor.formatOnSave": true,
 				"python.pythonPath": "/app/.venv/bin/python"
 			},
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"charliermarsh.ruff"
 			]
 		}
 	}
