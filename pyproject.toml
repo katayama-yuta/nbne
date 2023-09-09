@@ -11,6 +11,10 @@ streamlit = "^1.26.0"
 barfi = "^0.7.0"
 
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.287"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
