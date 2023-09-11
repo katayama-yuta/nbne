@@ -82,7 +82,11 @@ Dockerコンテナを立ち上げる
 3. 左下の青い「WSL: Ubuntsu-20.04」をクリックして、「Reopen in Container」をクリック
   ![image](https://github.com/katayama-yuta/nbne/assets/102128177/16aee4c6-0814-42eb-9f59-d199a768d9a3)
 4. Dockerコンテナが立ち上がって、新しいウィンドウ上で左下の青いところが「Dev Container～」になっていれば完了
-StreamLitを立ち上げる
+StreamLitへの接続方法
+※Dockerコンテナを立ち上げると自動的にStreamLitは立ち上がるようになっている
+1. ブラウザを立ち上げる
+2. URLに「http://localhost:8501/」と入力すると、StreamLitの画面になる
+3. Stream Litを終了したい時には、Dockerコンテナを終了させる
 Dockerコンテナの終わり方
 1. 左下の青いところ「Dev Container～」をクリック
 2. 「Close Remote Connection」をクリックして終了
