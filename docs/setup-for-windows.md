@@ -5,7 +5,8 @@
 ## 作成する環境
 - WSL2
 - Ubuntu 20.04
-- Docker git 24.0.5
+- Git
+- Docker 24.0.5
 - Docker Compose version v2.20.2
 
 ## 環境構築の手順
@@ -39,9 +40,11 @@ Linuxの更新を行い、Dockerをインストールしてください。
 $ sudo apt update
 $ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-Dockerのバージョンを確認するコマンド(以下の2つ)を実行して、バージョンが正しく表示されたら環境構築は完了となります。
+Dockerのコマンド（以下2つ）から出力されるバージョンに加え、最後のコマンドでGitのバージョンが正しく表示されたら環境構築は完了となります。
 ```shell
 $ docker -v
 $ docker -compose -v
 $ git --version
 ```
+
+[README.md](../README.md)に戻り、続いてNBNEのセットアップを行なってください。
