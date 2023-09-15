@@ -18,6 +18,8 @@ Coming soon.
 - [Docker](https://www.docker.com/)をローカルマシンやWSLにインストールしていること
 - [VSCode](https://code.visualstudio.com/)をインストールしていること（お気に入りのエディタがあれば、必須ではありません）
 
+GitとDockerを始めて用意するWindowsユーザーは[こちら](/docs/setup-for-windows.md)をチェックしてください。
+
 ### Installation
 
 作業用のディレクトリへ移動し、このリポジトリをローカルマシン（もしくはWSL）上にクローンしてください。
@@ -39,9 +41,9 @@ $ code nbne/
 $ docker compose build
 ```
 
-エラーなくビルドが完了したら、コマンドパレットを開き「Dev Container: Reopen in Container」を検索して実行してください。
+エラーなくビルドが完了したら、コマンドパレットを開き「Dev Container: Reopen in Container」を検索して実行してください。VSCode左下の表示が「Dev Container:...」に変わっていれば準備はOKです。下記のリンクにアクセスして、Streamlitのアプリケーションが立ち上がっていることを確認してください。
 
-VSCode左下の表示が「Dev Container:...」に変わっていれば準備はOKです。[Issues](https://github.com/katayama-yuta/nbne/issues)を読み、ブランチを切って開発を始めましょう！
+- [localhost:8501](localhost:8501)
 
 ### Stop Dev Container
 
