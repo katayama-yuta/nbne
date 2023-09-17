@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 streamlit = "^1.26.0"
 barfi = "^0.7.0"
+python-decouple = "^3.8"
+httpx = "^0.25.0"
 
 
 [tool.poetry.group.dev.dependencies]
