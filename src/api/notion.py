@@ -1,9 +1,10 @@
 import httpx
 
 
-class Notion:
-    def __init__(self, base_url, api_key):
-        self.base_url = base_url
+class NotionClient:
+    BASE_URL = "https://api.notion.com/v1"
+
+    def __init__(self, api_key: str):
         self.headers = {
             "Authorization": f"Bearer {api_key}",
             "Conteint-Type": "application/json",
@@ -11,7 +12,7 @@ class Notion:
         }
 
     def list_entities(self):
-        url = self.base_url + "search"
+        url = f"{self.BASE_URL}/search"
         r = httpx.post(url, headers=self.headers)
 
         return r.json()
@@ -20,7 +21,7 @@ class Notion:
 if __name__ == "__main__":
     from decouple import config
 
-    notion = Notion("https://api.notion.com/v1/", config("NOTION_API_KEY"))
+    notion = NotionClient(config("NOTION_API_KEY"))
     entities = notion.list_entities()
     for result in entities["results"]:
         print(result["object"])

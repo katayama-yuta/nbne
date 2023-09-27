@@ -64,7 +64,7 @@ NOTION_API_KEY=YOUR_API_KEY
 APIキーの設定ができたことを確認するため、下記コマンドでページ・DB情報が取得できることを確認しましょう。
 
 ```shell
-$ python api/notion.py
+$ python src/api/notion.py
 ```
 
 エラーなく一覧情報が取得できていればOKです。
