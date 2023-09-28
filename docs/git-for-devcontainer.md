@@ -29,7 +29,7 @@ eval "$(ssh-agent -s)"
 SSH agentを起動したら、以下のコマンドでGitHubに登録している鍵を追加します。指定するのは秘密鍵のファイルパスです。
 
 ```shell
-ssh-add ~/.ssh/github_rsa
+ssh-add ~/.ssh/{YOUR_PRIV_KEY}
 ```
 
 ## 動作確認
@@ -43,7 +43,7 @@ ssh -T git@github.com
 下記のようなログが表示されれば、動作確認は完了です。以降、Dev Containerから`git pull`や`git push`といった操作が可能となります。
 
 ```shell
-Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+Hi YOUR_NAME! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 ## 参考リンク
