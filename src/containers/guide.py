@@ -13,4 +13,4 @@ def guide_page_container():
         pages = page_repository.load_pages()
         guide_page_component(pages)
     else:
-        guide_page_component(None, None)
+        guide_page_component(None)
