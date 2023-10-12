@@ -10,12 +10,12 @@ def on_click():
     secret_repository.save_secret()
 
 
-def guide_page_component(secret_key, data):
+def guide_page_component(pages):
     st.title("Configure Notion API integration settings.")
 
-    if secret_key:
+    if pages:
         st.markdown("### List of Notion Pages")
-        st.dataframe(data)
+        st.dataframe(pages)
     else:
         st.markdown("### Internal Integration Secret")
         f = st.form("integration")
